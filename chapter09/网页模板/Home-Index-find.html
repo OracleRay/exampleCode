@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>商品列表 - 传智商城</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./Public/Home/css/style.css"/>
+	<script src="./Public/Common/js/jquery.min.js"></script>
+</head>
+<body>
+<div class="top">
+	<div class="top-nav">
+	<ul><li>收藏本站</li><li>关注本站</li></ul>
+	<ul class="right">
+				<li>您好，欢迎来到传智商城！[<a href="/User/login.html">登录</a>][<a href="/User/register.html">免费注册</a>]</li>		<li class="line">|</li><li><a href="/Order/index.html">我的订单</a></li>
+		<li class="line">|</li><li><a href="/User/index.html">会员中心</a></li>
+		<li class="line">|</li><li><a href="/Cart/index.html">我的购物车</a></li>
+		<li class="line">|</li><li>联系客服</li>
+	</ul>
+	</div>
+</div>
+<div class="box">
+	<div class="header">
+		<a class="left" href="/"><div class="logo"></div></a>
+		<div class="search left">
+			<input type="text" class="left" />
+			<input class="search-btn" type="button" value="搜索" />
+			<p class="search-hot">热门搜索：PHP培训　专业教材　智能手机　平板电脑</p>
+		</div>
+		<div class="info left">
+			<input type="button" value="会员中心" onclick="location.href='/User/index.html'" />
+			<input type="button" value="去购物车结算" onclick="location.href='/Cart/index.html'" />
+		</div>
+	</div>
+	<div class="nav">
+		<ul><li id="Index_find"><a class="category" href="/Index/find.html">全部商品分类</a></li><li id="Index_index"><a href="/">首页</a></li>
+			<li><a href="#">特色购物</a></li><li><a href="#">优惠促销</a></li><li><a href="#">限时秒杀</a></li>
+			<li><a href="#">品牌专区</a></li><li><a href="#">服务中心</a></li>
+		</ul>
+	</div>
+<div class="find">
+<div class="find-left left"><div class="title">相关商品推荐</div>
+	<ul class="item left">
+		<li><a href="/Index/goods/id/44.html" target="_blank"><img src="./Public/Uploads/small/2015-05/11/55501bd99a98e.jpg"></a></li>
+		<li class="goods"><a href="/Index/goods/id/44.html" target="_blank">Objective-C入门教程</a></li>
+		<li class="price">￥34.00</li>
+	</ul><ul class="item left">
+		<li><a href="/Index/goods/id/45.html" target="_blank"><img src="./Public/Uploads/small/2015-05/11/5550444272f89.png"></a></li>
+		<li class="goods"><a href="/Index/goods/id/45.html" target="_blank">PHP网站开发实例教程</a></li>
+		<li class="price">￥45.00</li>
+	</ul><ul class="item left">
+		<li><a href="/Index/goods/id/46.html" target="_blank"><img src="./Public/Uploads/small/2015-05/11/55502117ec92f.jpg"></a></li>
+		<li class="goods"><a href="/Index/goods/id/46.html" target="_blank">MySQL数据库入门</a></li>
+		<li class="price">￥39.50</li>
+	</ul><ul class="item left">
+		<li><a href="/Index/goods/id/47.html" target="_blank"><img src="./Public/Uploads/small/2015-05/11/5550216053882.jpg"></a></li>
+		<li class="goods"><a href="/Index/goods/id/47.html" target="_blank">Java基础入门</a></li>
+		<li class="price">￥44.50</li>
+	</ul><ul class="item left">
+		<li><a href="/Index/goods/id/48.html" target="_blank"><img src="./Public/Uploads/small/2015-05/11/555021e954397.jpg"></a></li>
+		<li class="goods"><a href="/Index/goods/id/48.html" target="_blank">JavaWeb程序开发入门</a></li>
+		<li class="price">￥44.50</li>
+	</ul><ul class="item left">
+		<li><a href="/Index/goods/id/50.html" target="_blank"><img src="./Public/Uploads/small/2015-05/11/5550449f1d984.jpg"></a></li>
+		<li class="goods"><a href="/Index/goods/id/50.html" target="_blank">PHP程序设计高级教程</a></li>
+		<li class="price">￥45.00</li>
+	</ul></div>
+<div class="find-right left">
+	<ul class="filter">
+		<li class="filter-title">商品列表</li>
+		<li><p>分类1：</p>
+				<a href="/Index/find/cid/14.html" class="cid-14" >图书</a><a href="/Index/find/cid/54.html" class="cid-54" >家具</a><a href="/Index/find/cid/55.html" class="cid-55" >手机</a><a href="/Index/find/cid/56.html" class="cid-56" >服装</a><a href="/Index/find/cid/57.html" class="cid-57" >家用电器</a><a href="/Index/find/cid/58.html" class="cid-58" >电脑、办公</a><a href="/Index/find/cid/59.html" class="cid-59" >运动户外</a><a href="/Index/find/cid/60.html" class="cid-60" >家具、厨具</a></li><li><p>分类2：</p>
+				<a href="/Index/find/cid/15.html" class="cid-15" >音像</a><a href="/Index/find/cid/16.html" class="cid-16" >IT类</a><a href="/Index/find/cid/35.html" class="cid-35" >少儿</a><a href="/Index/find/cid/38.html" class="cid-38" >管理</a><a href="/Index/find/cid/42.html" class="cid-42" >生活</a><a href="/Index/find/cid/45.html" class="cid-45" >艺术</a></li><li><p>分类3：</p>
+				<a href="/Index/find/cid/17.html" class="cid-17" >PHP书籍</a><a href="/Index/find/cid/18.html" class="cid-18" >JAVA书籍</a><a href="/Index/find/cid/19.html" class="cid-19" >MySQL书籍</a><a href="/Index/find/cid/34.html" class="cid-34" >C语言书籍</a><a href="/Index/find/cid/49.html" class="cid-49" >网页书籍</a></li>		<li><p>价格：</p><a href="/Index/find/cid/16.html" class="price-0">全部</a>
+			<a href="/Index/find/cid/16/price/0-10.html" class="price-0-10">0-10</a><a href="/Index/find/cid/16/price/11-20.html" class="price-11-20">11-20</a><a href="/Index/find/cid/16/price/21-30.html" class="price-21-30">21-30</a><a href="/Index/find/cid/16/price/31-40.html" class="price-31-40">31-40</a><a href="/Index/find/cid/16/price/41-50.html" class="price-41-50">41-50</a>		</li>
+		<li><p>排序：</p><a
+			href="/Index/find/cid/16.html" class="order-0">最新上架</a><a 
+			href="/Index/find/cid/16/order/price-asc.html" class="order-price-asc">价格升序</a><a
+			href="/Index/find/cid/16/order/price-desc.html" class="order-price-desc">价格降序</a>
+		</li>
+	</ul>
+	<div class="find-item">
+				<ul class="item left">
+			<li><a href="/Index/goods/id/51.html" target="_blank"><img src="./Public/Common/img/preview.jpg"></a></li>
+			<li class="goods"><a href="/Index/goods/id/51.html" target="_blank">HTML+CSS+JavaScript网页制作案例教程</a></li>
+			<li class="price">￥45.00</li>
+		</ul><ul class="item left">
+			<li><a href="/Index/goods/id/50.html" target="_blank"><img src="./Public/Uploads/small/2015-05/11/5550449f1d984.jpg"></a></li>
+			<li class="goods"><a href="/Index/goods/id/50.html" target="_blank">PHP程序设计高级教程</a></li>
+			<li class="price">￥45.00</li>
+		</ul><ul class="item left">
+			<li><a href="/Index/goods/id/49.html" target="_blank"><img src="./Public/Uploads/small/2015-05/11/555022d240c59.jpg"></a></li>
+			<li class="goods"><a href="/Index/goods/id/49.html" target="_blank">PHP程序设计基础教程</a></li>
+			<li class="price">￥40.00</li>
+		</ul><ul class="item left">
+			<li><a href="/Index/goods/id/48.html" target="_blank"><img src="./Public/Uploads/small/2015-05/11/555021e954397.jpg"></a></li>
+			<li class="goods"><a href="/Index/goods/id/48.html" target="_blank">JavaWeb程序开发入门</a></li>
+			<li class="price">￥44.50</li>
+		</ul><ul class="item left">
+			<li><a href="/Index/goods/id/47.html" target="_blank"><img src="./Public/Uploads/small/2015-05/11/5550216053882.jpg"></a></li>
+			<li class="goods"><a href="/Index/goods/id/47.html" target="_blank">Java基础入门</a></li>
+			<li class="price">￥44.50</li>
+		</ul><ul class="item left">
+			<li><a href="/Index/goods/id/46.html" target="_blank"><img src="./Public/Uploads/small/2015-05/11/55502117ec92f.jpg"></a></li>
+			<li class="goods"><a href="/Index/goods/id/46.html" target="_blank">MySQL数据库入门</a></li>
+			<li class="price">￥39.50</li>
+		</ul><ul class="item left">
+			<li><a href="/Index/goods/id/45.html" target="_blank"><img src="./Public/Uploads/small/2015-05/11/5550444272f89.png"></a></li>
+			<li class="goods"><a href="/Index/goods/id/45.html" target="_blank">PHP网站开发实例教程</a></li>
+			<li class="price">￥45.00</li>
+		</ul><ul class="item left">
+			<li><a href="/Index/goods/id/44.html" target="_blank"><img src="./Public/Uploads/small/2015-05/11/55501bd99a98e.jpg"></a></li>
+			<li class="goods"><a href="/Index/goods/id/44.html" target="_blank">Objective-C入门教程</a></li>
+			<li class="price">￥34.00</li>
+		</ul>		<div class="clear"></div>
+		<div class="pagelist"><div>    </div></div>	</div>
+</div>
+</div>
+<script>
+//导航条选中效果
+$("#Index_find").addClass("category-curr");
+//筛选列表，分类的当前选中效果
+$(".cid-16").addClass("curr");$(".cid-14").addClass("curr");$(".cid-0").addClass("curr");//商品价格的选中效果
+	$(".price-0").addClass("curr");//商品排序的选中效果
+	$(".order-0").addClass("curr");</script>
+	<div class="service">
+		<ul><li>购物指南</li><li>配送方式</li><li>支付方式</li>
+			<li>售后服务</li><li>特色服务</li><li>网络服务</li>
+		</ul>
+	</div>
+	<div class="footer">传智商城·本项目仅供学习使用</div>
+</div>
+</body>
+</html>

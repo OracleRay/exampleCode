@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>传智商城 - 后台管理系统</title>
+	<link rel="stylesheet" href="./Public/Admin/css/style.css"/>
+	<script src="./Public/Common/js/jquery.min.js"></script>
+</head>
+<body>
+<div class="top">
+	<h1 class="left">传智商城 <span>后台管理系统</span></h1>
+	<ul class="right">
+		<li>欢迎您：admin</li>
+		<li><a href="/" target="_blank">前台首页</a></li>
+		<li><a href="/Admin/Login/logout.html">退出登录</a></li>
+	</ul>
+</div>
+<div class="main">
+	<div class="menu left">
+		<div class="box">
+			<div class="head"><i></i><div>管理菜单</div></div>
+			<ul><li><a href="/Admin/Index/index.html">后台首页</a></li>
+				<li><a href="/Admin/Goods/add.html" id="Goods_add">商品添加</a></li>
+				<li><a href="/Admin/Goods/index.html" id="Goods_index">商品列表</a></li>
+				<li><a href="/Admin/Category/add.html" id="Category_add">分类添加</a></li>
+				<li><a href="/Admin/Category/index.html" id="Category_index">分类列表</a></li>
+				<li><a href="/Admin/Recycle/index.html" id="Recycle_index">回收站</a></li>
+				<li><a href="/Admin/User/index.html" id="User_index">会员管理</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="content">
+		<div class="item"><div class="title">分类添加</div>
+<div class="top-button">
+	相关操作：<a href="/Admin/Category/index.html" class="light">分类列表</a>
+</div>
+<div class="list auto">
+	<form method="post">
+	<table class="t2 t3">
+		<tr><th>上级分类：</th><td>
+			<select name="pid" id="category">
+				<option value="0">顶级分类</option>
+				<option value="14">图书</option><option value="15">— 音像</option><option value="62">— — 音乐</option><option value="63">— — 影视</option><option value="64">— — 游戏</option><option value="16">— IT类</option><option value="17">— — PHP书籍</option><option value="18">— — JAVA书籍</option><option value="19">— — MySQL书籍</option><option value="34">— — C语言书籍</option><option value="49">— — 网页书籍</option><option value="35">— 少儿</option><option value="36">— — 少儿英语</option><option value="37">— — 少儿文学</option><option value="38">— 管理</option><option value="39">— — 经济</option><option value="40">— — 金融</option><option value="41">— — 投资</option><option value="42">— 生活</option><option value="43">— — 旅游</option><option value="44">— — 运动</option><option value="45">— 艺术</option><option value="46">— — 摄影</option><option value="47">— — 设计</option><option value="48">— — 绘画</option><option value="54">家具</option><option value="55">手机</option><option value="56">服装</option><option value="57">家用电器</option><option value="58">电脑、办公</option><option value="59">运动户外</option><option value="60">家具、厨具</option>			</select>
+		</td></tr>
+		<tr><th>分类名称：</th><td><input type="text" name="name"></td></tr>
+	</table>
+	<div class="btn">
+		<input type="submit" value="添加分类">
+		<input type="submit" value="添加并返回" name="return">
+	</div>
+	</form>
+</div>
+</div>
+	</div>
+</div>
+<script>
+	$("#Category_add").addClass("curr");
+</script>
+</body>
+</html>

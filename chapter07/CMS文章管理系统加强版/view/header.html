@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>文章管理系统</title>
+  	<link href="./js/umeditor/themes/default/css/umeditor.min.css" rel="stylesheet" />
+	<script src="./js/umeditor/third-party/jquery.min.js"></script>
+	<script src="./js/umeditor/umeditor.config.js"></script>
+	<script src="./js/umeditor/umeditor.min.js"></script>
+	<script src="./js/umeditor/lang/zh-cn/zh-cn.js"></script>
+	<link href="./css/article.css" rel="stylesheet" />
+ </head>
+ <body>
+ 	<!--header-->
+ 	<div class="header">
+		<!--网页头信息-->
+		<div class="title"><img src="./images/title.png"></div>
+		<!--分类导航栏-->
+		<div class="nav">
+			<ul>
+				<li><a href="index.php">首页</a></li>
+				<?php foreach($category as $v):?>
+				<li><a href="index.php?cid=<?php echo $v['id'];?>"><?php echo $v['name'];?></a></li>
+				<?php endforeach;?>
+				<?php if ($login): ?>
+					<li><a href="profile.php">编辑资料</a></li>
+					<li><a href="portrait.php">上传头像</a></li>
+					<li><a href="logout.php">退出</a></li>
+				<?php else: ?>
+					<li><a href="login.php">登录</a></li>
+					<li><a href="register.php">注册</a></li>
+				<?php endif; ?>
+			</ul>
+		</div>
+	
+	</div>
+	<!--错误信息-->
+	<?php if(!empty($error)): ?>
+		<div class="error"><ul>
+			<?php foreach($error as $v): ?>
+			<li><?php echo $v; ?></li>
+			<?php endforeach; ?>
+		</ul></div>
+	<?php endif; ?>

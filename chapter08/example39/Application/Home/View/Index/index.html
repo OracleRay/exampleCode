@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>系统信息</title>
+        <style type="text/css">
+            body{background-color:#eee;margin:0;padding:0;}
+            .box{width:500px;margin:15px auto;padding:20px;border:1px solid #ccc;background-color:#fff;}
+            .box h2{font-size:20px;text-align:center;}
+            .profile-table{margin:0 auto;}
+            .profile-table td{font-size:14px;padding: 0 20px;line-height: 20px;}
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <table class="profile-table">
+                <h2>服务器信息列表</h2>
+                <tr>
+                    <td>系统版本</td><td>{$serverInfo['server_version']}</td>
+                </tr>
+                <tr>
+                    <td>apache版本</td><td>{$serverInfo['apache_version']}</td>
+                </tr>
+                <tr>
+                    <td>PHP版本</td><td>{$serverInfo['php_version']}</td>
+                </tr>
+                <tr>
+                    <td>脚本地址</td><td>{$serverInfo['script_path']}</td>
+                </tr>
+                <tr>
+                    <td>系统时间</td><td>{$serverInfo['server_time']}</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

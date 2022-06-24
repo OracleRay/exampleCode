@@ -1,0 +1,27 @@
+<?php require './view/header.html' ?>
+<script>
+	//检查两次输入密码是否一致
+	function checkForm(){
+		var pw1 = document.getElementById("pw1").value;
+		var pw2 = document.getElementById("pw2").value;
+		if(pw1 !== pw2){
+			alert('两次输入密码不一致！');
+			return false;
+		}
+		return true;
+	}
+</script>
+<form method="post" action="register.php" onsubmit="return checkForm()" >
+	<table class="reg">
+		<tr><td class="title" colspan="2">欢迎注册新用户</td></tr>
+		<tr><th>用户名：</th><td><input type="text" name="username" /></td></tr>
+		<tr><th>邮箱：</th><td><input type="text" name="email" /></td></tr>
+		<tr><th>密码：</th><td><input type="password" name="password" id="pw1" /></td></tr>
+		<tr><th>确认密码：</th><td><input type="password" id="pw2" /></td></tr>
+		<tr><td colspan="2" class="td-btn">
+		<input type="submit" value="提交注册" class="button" />
+		<input type="button" value="返回登录" class="button" onclick="location.href='login.php'"  />
+		</td></tr>
+	</table>
+</form>
+<?php require './view/footer.html' ?>

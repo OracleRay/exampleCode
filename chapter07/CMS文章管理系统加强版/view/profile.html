@@ -1,0 +1,35 @@
+<?php require './view/header.html'; ?>
+<div class="profile">
+	<h1>编辑个人资料</h1>
+	<form method="post">
+	<table class="profile-table">
+		<tr><th>昵称：</th><td><input type="text" name="nickname" value="<?php echo $data['nickname']; ?>" /></td></tr>
+		<tr><th>性别：</th><td>
+			<input type="radio" name="gender" value="男" id="male" <?php if($data['gender']=='男') echo 'checked'; ?> /><label for="male">男</label>
+			<input type="radio" name="gender" value="女" id="female" <?php if($data['gender']=='女') echo 'checked'; ?> /><label for="female">女</label>
+		</td></tr>
+		<tr><th>邮箱：</th><td><input type="text" name="email" value="<?php echo $data['email']; ?>" /></td></tr>
+		<tr><th>QQ号：</th><td><input type="text" name="qq" value="<?php echo $data['qq']; ?>" /></td></tr>
+		<tr><th>个人主页：</th><td><input type="text" name="url" value="<?php echo $data['url']; ?>" /></td></tr>
+		<tr><th>所在城市：</th><td>
+			<select name="city">
+				<option value="未选择">未选择</option>
+				<?php foreach($city as $v): ?>
+					<option value="<?php echo $v ?>" <?php if($data['city']==$v) echo 'selected'; ?> ><?php echo $v ?></option>
+				<?php endForeach; ?>
+			</select>
+		</td></tr>
+		<tr><th>语言技能：</th><td>
+			<?php foreach($skill as $k=>$v): ?>
+				<input type="checkbox" name="skill[]" id="ck<?php echo $k; ?>" value="<?php echo $v; ?>" <?php if(in_array($v,$data['skill'])) echo 'checked'; ?> /><label for="ck<?php echo $k; ?>"><?php echo $v; ?></label>
+			<?php endForeach; ?>
+		</td></tr>
+		<tr><th class="txttop">自我介绍：</th><td><textarea class="description" name="description"><?php echo $data['description']; ?></textarea></td></tr>
+		<tr><td colspan="2" class="td-btn">
+		<input type="submit" value="保存资料" class="button" />
+		<input type="reset" value="重新填写" class="button" />
+		</td></tr>
+	</table>
+	</form>
+</div>
+<?php require './view/footer.html'; ?>

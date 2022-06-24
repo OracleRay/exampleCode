@@ -1,0 +1,21 @@
+
+【VC++2008运行库】
+   http://www.microsoft.com/zh-cn/download/details.aspx?id=11895
+
+【Apache 2.2.29】
+   最新版本：
+      http://www.apachelounge.com/download/
+   教材配套版本：
+      见本套源代码中的“httpd-2.2.29-win32-VC9.zip”。
+
+【PHP】
+   最新版本：
+      http://www.php.net/
+   教材配套版本：（5.4.38）
+      http://windows.php.net/downloads/releases/archives/php-5.4.38-Win32-VC9-x86.zip
+
+【MySQL】
+   5.5系列：
+      http://dev.mysql.com/downloads/mysql/5.5.html#downloads
+   教材配套版本：（5.5.43）
+      http://downloads.mysql.com/archives/community/

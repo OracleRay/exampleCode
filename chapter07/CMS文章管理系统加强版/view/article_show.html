@@ -1,0 +1,33 @@
+<?php require './view/header.html'; ?>
+<!--body-->
+<div class="box article_show">
+	<div class="main">
+		<div class="show_title"> 
+			<h2><?php echo $rst['title'];?></h2>
+			<span>时间：<?php echo $rst['addtime'];?></span>
+			<span>分类：<?php echo $rst['cname'];?></span>
+			<span>作者：<?php echo $rst['author'];?></span>
+		</div>
+		<div class="content"><?php echo $rst['content'];?> </div>
+		<div class="paging">
+			<a href="<?php echo $pre_link;?>">【上一篇】</a>　
+			<a href="<?php echo $next_link;?>">【下一篇】</a>
+		</div>
+	</div>
+	<div class="side">
+		<p>推荐文章</p>
+		<ul>
+			<li>PHP加载MySQL问题</li>
+			<li>Eclipse for PHP</li>
+			<li>PHP高手干货分享</li>
+			<li>PHP函数引用传参数组</li>
+		</ul>
+		<p>浏览历史（<a href="?id=<?php echo $id; ?>&action=clear">清除历史</a>）</p>
+		<ul>
+			<?php foreach($data_history as $k=>$v): ?>
+			<li><a href="?id=<?php echo $v['id']; ?>"><?php echo $v['title']; ?></a></li>
+			<?php endforeach; ?>
+		</ul>
+	</div>
+</div>
+<?php require './view/footer.html'; ?>

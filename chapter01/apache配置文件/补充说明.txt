@@ -1,0 +1,8 @@
+
+如何正确开启curl扩展：
+
+  在 windows 下安装 Apache + PHP 时，仅通过 php.ini 打开 php_curl.dll 还不够，
+
+  还需要在 Apache 的 httpd.conf 中添加以下配置才能正确开启：
+
+  LoadFile "C:/web/php5.4/libssh2.dll"

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>传智商城 - 后台管理系统</title>
+	<link rel="stylesheet" href="./Public/Admin/css/style.css"/>
+	<script src="./Public/Common/js/jquery.min.js"></script>
+</head>
+<body>
+<div class="top">
+	<h1 class="left">传智商城 <span>后台管理系统</span></h1>
+	<ul class="right">
+		<li>欢迎您：admin</li>
+		<li><a href="/" target="_blank">前台首页</a></li>
+		<li><a href="/Admin/Login/logout.html">退出登录</a></li>
+	</ul>
+</div>
+<div class="main">
+	<div class="menu left">
+		<div class="box">
+			<div class="head"><i></i><div>管理菜单</div></div>
+			<ul><li><a href="/Admin/Index/index.html">后台首页</a></li>
+				<li><a href="/Admin/Goods/add.html" id="Goods_add">商品添加</a></li>
+				<li><a href="/Admin/Goods/index.html" id="Goods_index">商品列表</a></li>
+				<li><a href="/Admin/Category/add.html" id="Category_add">分类添加</a></li>
+				<li><a href="/Admin/Category/index.html" id="Category_index">分类列表</a></li>
+				<li><a href="/Admin/Recycle/index.html" id="Recycle_index">回收站</a></li>
+				<li><a href="/Admin/User/index.html" id="User_index">会员管理</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="content">
+		<div class="item"><div class="title">后台首页</div>
+<dl class="bordered">
+	<dt>欢迎访问</dt>
+	<dd>欢迎进入传智商城后台！请从左侧选择一个操作。</dd>
+	<dd></dd>
+</dl>
+<dl class="bordered">
+	<dt>服务器信息</dt>
+	<dd>系统环境：Apache/2.2.29 (Win32) PHP/5.4.38</dd>
+	<dd>服务器时间：2015-05-21 18:36:41</dd>
+	<dd>MySQL版本：5.5.43</dd>
+	<dd>文件上传限制：2M</dd>
+	<dd>脚本执行时限：30秒</dd>
+</dl></div>
+	</div>
+</div>
+<script>
+	$("#Index_index").addClass("curr");
+</script>
+</body>
+</html>

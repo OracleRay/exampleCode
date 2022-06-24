@@ -1,0 +1,35 @@
+<?php require './view/header.html'; ?>
+<!--body-->
+<div class="box add">
+<form method="post">
+	<div class="classify">
+  	文章分类：<select name="category">
+				<?php foreach($category as $v):?>
+				<option value="<?php echo $v['id'];?>"><?php echo $v['name'];?></option>
+				<?php endforeach;?>
+  		    </select>
+  		    <a href="category.php">分类管理</a>
+    </div>
+  
+	<div class="article">
+		<div class="article_title">
+			标题：<input type="text" name="title" value="" id="title"  />
+			<span>作者：<input type="text" name="author" value="" class="black" /></span>
+		</div>
+		
+		<div class="article_editor">
+			<!--style给定宽度可以影响编辑器的最终宽度-->
+			<script type="text/plain" id="myEditor" style="width:1025px;height:250px;" name="content">
+				<p>请在这里编写文章……</p>
+            </script>
+            <script>
+				UM.getEditor('myEditor');
+			</script>
+		</div>
+	</div>
+
+	<input class="sub" type="submit" value="提交" />
+	<input class="cancel" type="button" value="取消"  onclick="{if(confirm('确定要取消添加文章吗?')){window.location.href='index.php';}return false;}" />
+</form>
+</div>
+<?php require './view/footer.html'; ?>

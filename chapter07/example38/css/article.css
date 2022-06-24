@@ -1,0 +1,118 @@
+
+/* ---------------------------------全局样式-------------------------- */
+body,div,ul,p{ margin:0; padding:0; }
+a:link,a:visited,a:hover,a:active{ text-decoration:none; cursor:pointer; }
+body{font-family:'Microsoft YaHei';}
+
+
+/* ---------------------------------header--------------------------- */
+.header{ margin-bottom:20px;text-align:center;}
+.title{ margin:10px auto; }
+.title img{ height:150px; width:1055px;}
+
+/* 分类导航栏 */
+.nav{ width:100%; height:45px; line-height:45px; background:#1685BD; color:#FFF; font-weight:bold; padding-left:0px;}
+.nav ul{ margin:0 auto;width:1055px; }
+.nav li{ float:left; list-style:none; }
+.nav li a{ color:#FFF; display:block;padding:0 30px;height:45px;letter-spacing:3px; text-align:center;}
+.nav li a:hover{background:#0F5F86;}
+
+/* ----------------------------------body-------------------------- */
+/*body整体样式*/
+.box{ margin:0 auto;width:1055px;}
+
+
+/*错误信息样式*/
+.error{ border:1px solid #FF0000; background:#FFDFDF; color:#FF0000; margin:0 auto; width:500px;}
+.error li{ list-style:inside; padding: 5px 10px;}
+
+
+/*文章列表展示页面*/
+.main{ width:70%; float:left;}
+.main li{ list-style:none; border-bottom:1px dotted #ccc; margin-bottom:20px; color:#66657D; }
+.main .article_title{ font-size:22px; font-weight:bold; color:#3B3B3B;line-height:35px;}
+.main .article_title a{color:#444;}
+.main .ope{ float:right; margin:0 15px;}
+.main li .ope a{color:#1685BD;line-height:35px;font-size:14px;}
+.main p{ margin:10px;;line-height:28px; font-size:14px;}
+.main .article_content{text-indent:28px;}
+.main .article_show{font-size:16px;}
+.main .article_show a{color:#1685BD;font-size:14px;}
+.main .article_label{ color:#393939;}
+
+
+/*分页样式*/
+.main .page{font-size:14px;text-align:center;}
+.main .page a{color:#1685BD;font-size:14px;}
+.main .page a:hover{text-decoration:underline;}
+
+/*侧栏样式*/
+.side .add_article{ border:1px solid #D5D5D5; background:#FAFAFA; width:294px; height:55px; line-height:55px; text-align:center; color:#565656; }
+.side .add_article img{ margin-right:10px;}
+.side .add_article a:link{color:#565656;}
+.side{ float:right; padding-left:10px; width:28%;}
+.side ul li{ list-style: inside;  font-size:16px; line-height:40px; border-bottom:1px dotted #DBDBDB; }
+.side ul li a{color:#565656;}
+.side p{margin:18px 0 10px 0; font-size:22px;  font-weight:bold; color:#444;}
+
+
+
+/*文章添加表单样式*/
+.add{border: 1px dotted #ccc;background: #fcfcfc;padding: 10px;}
+.add .sub{ margin:10px; width:70px; height:30px; background:#5CAAE6; border:1px solid #92B4EB; color:#FFF; font-weight:bold;}
+.add .cancel{ margin:10px; width:50px; height:30px; background:#F7F7F7; border:1px solid #DBDBDB; color:#5F5F5F;}
+.add .classify{ width:1033px; height:40px; line-height:40px; margin-bottom:10px; font-size:14px; color:#545454; padding:0 10px ;}
+.add .classify a{color:#2F93CE; padding-left:10px; }
+.add .classify select{ width:100px;height:25px;font-size:12px; color:#545454; }
+
+.add .article{  overflow:visible; }
+.add .article_editor{margin:10px auto 15px;width:1025px;}
+.add .article_title{margin:10px 0 15px 10px;font-size: 14px;color: #545454;}
+.add .article_title input{ height:30px; width:650px; color:#545454; font-size:15px; border:1px solid #D4D0C8; letter-spacing:1px;font-family:'Microsoft YaHei'; margin-left:5px;padding-left:10px;}
+.add .article_title .black{color:#444;}
+.add .article_title span {float:right;margin:0 10px 5px 5px;}
+.add .article_title span input{ width:200px;height:30px;}
+
+.add .sub,.add .cancel{cursor:pointer;}
+
+/*文章分类列表样式*/
+.category_list{ width:500px; margin:0 auto; text-align:center;}
+.category_add_form{ margin:10px;}
+.category_add_form .cname{ width:150px; height:20px;}
+.category_add_form .sub{ width:70px; height:28px; background:#5CAAE6; border:1px solid #92B4EB; color:#FFF; font-weight:bold;}
+
+.category_list .list{ margin:0 auto; width:100%; border:1px solid #2F93CE;border-collapse:collapse; margin:0px auto;text-align:center;}
+.category_list .list input{ width:25px; text-align:center;}
+.category_list .btnbox{ text-align:left; margin:10px 20px; }
+.category_list .btnbox input{width:70px; height:28px; background:#5CAAE6; border:1px solid #92B4EB; color:#FFF; font-weight:bold;}
+
+.category_list .list tr{ height:30px;}
+.category_list .list td{ padding:5px 7px;}
+.category_list .list tr:nth-child(1){ background:#2F93CE; color:#FFF; font-weight:bold;}
+.category_list .list a{ color:#000;}
+
+/*文章展示样式*/
+.article_show .show_title {text-align:center; font-size:14px; border-bottom:1px dotted #c7c7c7; padding-bottom:15px;margin-bottom:20px;}
+.article_show h2{ font-size:24px;}
+.article_show span{ padding-right:10px;}
+.article_show .paging{ text-align:center;}
+.article_show a{ color:#0871A5;}
+
+/*编辑器样式修复*/
+.article_editor ul{padding-left: 20px;}
+.article_editor a{color: #1685BD;} 
+.article_editor a:hover{text-decoration:underline;}
+.article_editor .edui-editor-body .edui-body-container{font-family:'Microsoft YaHei';font-size:15px;}
+.article_show .content{font-size:15px;}
+.article_show .content p{font-size:15px;}
+.article_show .content img{max-width:730px;}
+.article_show .content p{line-height:18px;margin:5px 0}
+.article_show .content li{border: 0;margin: 0;color: #000;}
+.article_show .content ul{padding-left:40px;}
+.article_show .content ul li{list-style: disc;}
+.article_show .content ol li{list-style: decimal;}
+.article_show .content a{color: #1685BD;}
+.article_show .content a:hover{text-decoration:underline;}
+
+/* ----------------------------------footer-------------------------- */
+.footer{  margin:0 auto; padding:30px; text-align:center; font-size:12px; line-height:25px; color:#AAA;clear: both;}

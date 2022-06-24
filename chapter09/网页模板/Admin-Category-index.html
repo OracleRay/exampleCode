@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>传智商城 - 后台管理系统</title>
+	<link rel="stylesheet" href="./Public/Admin/css/style.css"/>
+	<script src="./Public/Common/js/jquery.min.js"></script>
+</head>
+<body>
+<div class="top">
+	<h1 class="left">传智商城 <span>后台管理系统</span></h1>
+	<ul class="right">
+		<li>欢迎您：admin</li>
+		<li><a href="/" target="_blank">前台首页</a></li>
+		<li><a href="/Admin/Login/logout.html">退出登录</a></li>
+	</ul>
+</div>
+<div class="main">
+	<div class="menu left">
+		<div class="box">
+			<div class="head"><i></i><div>管理菜单</div></div>
+			<ul><li><a href="/Admin/Index/index.html">后台首页</a></li>
+				<li><a href="/Admin/Goods/add.html" id="Goods_add">商品添加</a></li>
+				<li><a href="/Admin/Goods/index.html" id="Goods_index">商品列表</a></li>
+				<li><a href="/Admin/Category/add.html" id="Category_add">分类添加</a></li>
+				<li><a href="/Admin/Category/index.html" id="Category_index">分类列表</a></li>
+				<li><a href="/Admin/Recycle/index.html" id="Recycle_index">回收站</a></li>
+				<li><a href="/Admin/User/index.html" id="User_index">会员管理</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="content">
+		<div class="item"><div class="title">商品分类</div>
+<div class="top-button">
+	相关操作：<a href="/Admin/Category/add.html" class="light">添加分类</a>
+</div>
+<div class="list full auto">
+	<table>
+		<tr><th>分类名称</th><th>操作</th></tr>
+		<tr><td>图书</td><td><a href="/Admin/Category/edit/id/14.html">修改</a>　<a href="#" class="act-del" data-id="14" >删除</a></td></tr><tr><td>— 音像</td><td><a href="/Admin/Category/edit/id/15.html">修改</a>　<a href="#" class="act-del" data-id="15" >删除</a></td></tr><tr><td>— — 音乐</td><td><a href="/Admin/Category/edit/id/62.html">修改</a>　<a href="#" class="act-del" data-id="62" >删除</a></td></tr><tr><td>— — 影视</td><td><a href="/Admin/Category/edit/id/63.html">修改</a>　<a href="#" class="act-del" data-id="63" >删除</a></td></tr><tr><td>— — 游戏</td><td><a href="/Admin/Category/edit/id/64.html">修改</a>　<a href="#" class="act-del" data-id="64" >删除</a></td></tr><tr><td>— IT类</td><td><a href="/Admin/Category/edit/id/16.html">修改</a>　<a href="#" class="act-del" data-id="16" >删除</a></td></tr><tr><td>— — PHP书籍</td><td><a href="/Admin/Category/edit/id/17.html">修改</a>　<a href="#" class="act-del" data-id="17" >删除</a></td></tr><tr><td>— — JAVA书籍</td><td><a href="/Admin/Category/edit/id/18.html">修改</a>　<a href="#" class="act-del" data-id="18" >删除</a></td></tr><tr><td>— — MySQL书籍</td><td><a href="/Admin/Category/edit/id/19.html">修改</a>　<a href="#" class="act-del" data-id="19" >删除</a></td></tr><tr><td>— — C语言书籍</td><td><a href="/Admin/Category/edit/id/34.html">修改</a>　<a href="#" class="act-del" data-id="34" >删除</a></td></tr><tr><td>— — 网页书籍</td><td><a href="/Admin/Category/edit/id/49.html">修改</a>　<a href="#" class="act-del" data-id="49" >删除</a></td></tr><tr><td>— 少儿</td><td><a href="/Admin/Category/edit/id/35.html">修改</a>　<a href="#" class="act-del" data-id="35" >删除</a></td></tr><tr><td>— — 少儿英语</td><td><a href="/Admin/Category/edit/id/36.html">修改</a>　<a href="#" class="act-del" data-id="36" >删除</a></td></tr><tr><td>— — 少儿文学</td><td><a href="/Admin/Category/edit/id/37.html">修改</a>　<a href="#" class="act-del" data-id="37" >删除</a></td></tr><tr><td>— 管理</td><td><a href="/Admin/Category/edit/id/38.html">修改</a>　<a href="#" class="act-del" data-id="38" >删除</a></td></tr><tr><td>— — 经济</td><td><a href="/Admin/Category/edit/id/39.html">修改</a>　<a href="#" class="act-del" data-id="39" >删除</a></td></tr><tr><td>— — 金融</td><td><a href="/Admin/Category/edit/id/40.html">修改</a>　<a href="#" class="act-del" data-id="40" >删除</a></td></tr><tr><td>— — 投资</td><td><a href="/Admin/Category/edit/id/41.html">修改</a>　<a href="#" class="act-del" data-id="41" >删除</a></td></tr><tr><td>— 生活</td><td><a href="/Admin/Category/edit/id/42.html">修改</a>　<a href="#" class="act-del" data-id="42" >删除</a></td></tr><tr><td>— — 旅游</td><td><a href="/Admin/Category/edit/id/43.html">修改</a>　<a href="#" class="act-del" data-id="43" >删除</a></td></tr><tr><td>— — 运动</td><td><a href="/Admin/Category/edit/id/44.html">修改</a>　<a href="#" class="act-del" data-id="44" >删除</a></td></tr><tr><td>— 艺术</td><td><a href="/Admin/Category/edit/id/45.html">修改</a>　<a href="#" class="act-del" data-id="45" >删除</a></td></tr><tr><td>— — 摄影</td><td><a href="/Admin/Category/edit/id/46.html">修改</a>　<a href="#" class="act-del" data-id="46" >删除</a></td></tr><tr><td>— — 设计</td><td><a href="/Admin/Category/edit/id/47.html">修改</a>　<a href="#" class="act-del" data-id="47" >删除</a></td></tr><tr><td>— — 绘画</td><td><a href="/Admin/Category/edit/id/48.html">修改</a>　<a href="#" class="act-del" data-id="48" >删除</a></td></tr><tr><td>家具</td><td><a href="/Admin/Category/edit/id/54.html">修改</a>　<a href="#" class="act-del" data-id="54" >删除</a></td></tr><tr><td>手机</td><td><a href="/Admin/Category/edit/id/55.html">修改</a>　<a href="#" class="act-del" data-id="55" >删除</a></td></tr><tr><td>服装</td><td><a href="/Admin/Category/edit/id/56.html">修改</a>　<a href="#" class="act-del" data-id="56" >删除</a></td></tr><tr><td>家用电器</td><td><a href="/Admin/Category/edit/id/57.html">修改</a>　<a href="#" class="act-del" data-id="57" >删除</a></td></tr><tr><td>电脑、办公</td><td><a href="/Admin/Category/edit/id/58.html">修改</a>　<a href="#" class="act-del" data-id="58" >删除</a></td></tr><tr><td>运动户外</td><td><a href="/Admin/Category/edit/id/59.html">修改</a>　<a href="#" class="act-del" data-id="59" >删除</a></td></tr><tr><td>家具、厨具</td><td><a href="/Admin/Category/edit/id/60.html">修改</a>　<a href="#" class="act-del" data-id="60" >删除</a></td></tr>	</table>
+</div>
+<form method="post" id="form">
+	<input type="hidden" name="id" id="target_id">
+<input type="hidden" name="__hash__" value="cdbedfb66f38caf835ffde7e20697afa_49480b652119b3ceeb0d07813e39bdca" /></form>
+<script>
+	//删除
+	$(".act-del").click(function(){
+		if(confirm('确定要删除吗？（该分类下的商品将归于未分类）')){
+			$("#target_id").val($(this).attr("data-id"));
+			$("#form").attr("action","/Admin/Category/del.html").submit();
+		}
+	});
+</script></div>
+	</div>
+</div>
+<script>
+	$("#Category_index").addClass("curr");
+</script>
+</body>
+</html>

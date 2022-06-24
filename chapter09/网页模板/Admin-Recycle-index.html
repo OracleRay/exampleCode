@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>传智商城 - 后台管理系统</title>
+	<link rel="stylesheet" href="./Public/Admin/css/style.css"/>
+	<script src="./Public/Common/js/jquery.min.js"></script>
+</head>
+<body>
+<div class="top">
+	<h1 class="left">传智商城 <span>后台管理系统</span></h1>
+	<ul class="right">
+		<li>欢迎您：admin</li>
+		<li><a href="/" target="_blank">前台首页</a></li>
+		<li><a href="/Admin/Login/logout.html">退出登录</a></li>
+	</ul>
+</div>
+<div class="main">
+	<div class="menu left">
+		<div class="box">
+			<div class="head"><i></i><div>管理菜单</div></div>
+			<ul><li><a href="/Admin/Index/index.html">后台首页</a></li>
+				<li><a href="/Admin/Goods/add.html" id="Goods_add">商品添加</a></li>
+				<li><a href="/Admin/Goods/index.html" id="Goods_index">商品列表</a></li>
+				<li><a href="/Admin/Category/add.html" id="Category_add">分类添加</a></li>
+				<li><a href="/Admin/Category/index.html" id="Category_index">分类列表</a></li>
+				<li><a href="/Admin/Recycle/index.html" id="Recycle_index">回收站</a></li>
+				<li><a href="/Admin/User/index.html" id="User_index">会员管理</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="content">
+		<div class="item"><div class="title">商品回收站</div>
+<div class="top-button">
+	相关操作：<a href="/Admin/Goods/index.html" class="light">商品列表</a>
+</div>
+<div class="list full">
+	<table>
+		<tr><th class="t1">商品分类</th><th>商品名称</th><th width="100">库存</th><th width="60">上架</th><th width="60">推荐</th><th width="120">操作</th></tr>
+		<tr><td class="t1">
+				IT类			</td>
+			<td>测试</td><td>11</td>
+			<td>否</td>
+			<td>否</td><td>
+			<a href="#" class="act-rec" data-id="52">恢复</a>　<a href="#" class="act-del" data-id="52">删除</a></td></tr><tr><td class="t1">
+				网页书籍			</td>
+			<td>HTML+CSS+JavaScript网页制作案例教程</td><td>96</td>
+			<td>是</td>
+			<td>否</td><td>
+			<a href="#" class="act-rec" data-id="51">恢复</a>　<a href="#" class="act-del" data-id="51">删除</a></td></tr>	</table>
+</div>
+<div class="pagelist"><div>    </div></div>
+<form method="post" id="form">
+	<input type="hidden" name="id" id="target_id">
+</form>
+<script>
+	//彻底删除
+	$(".act-del").click(function(){
+		if(confirm('确定要彻底删除吗？')){
+			$("#target_id").val($(this).attr("data-id"));
+			$("#form").attr("action","/Admin/Recycle/del/p/0.html").submit();
+		}
+	});
+	//恢复
+	$(".act-rec").click(function(){
+		$("#target_id").val($(this).attr("data-id"));
+		$("#form").attr("action","/Admin/Recycle/rec/p/0.html").submit();
+	});
+</script></div>
+	</div>
+</div>
+<script>
+	$("#Recycle_index").addClass("curr");
+</script>
+</body>
+</html>
